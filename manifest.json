@@ -1,0 +1,20 @@
+{
+  "name": "View YT Thumbnail",
+  "version": "1.0",
+  "description": "Displays YouTube thumbnails!",
+  "permissions": [
+    "contextMenus",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["magic.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
